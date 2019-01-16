@@ -100,17 +100,17 @@ function handleMouseEnter(d, i) {
         .style('position', 'fixed')
         .style('font-size', () => {
             if (d.region.length < 12) {
-                return '80px';
+                return '60px';
             } else if (d.region.length >= 12 && d.region.length < 22) {
-                return '50px';
+                return '40px';
             } else if (d.region.length >= 22 && d.region.length < 32) {
-                return '30px';
+                return '20px';
             } else if (d.region.length >= 32 && d.region.length < 42) {
                 return '15px';
             }
         })
         .classed('country', true)
-        .text(d.region + ' ' + d.adultLiteracyRate);
+        .text(d.region);
 }
 
 function handleMouseOut(d, i) {
