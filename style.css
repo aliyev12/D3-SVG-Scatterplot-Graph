@@ -1,0 +1,15 @@
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.tick line {
+    stroke: #ccc;
+    stroke-dasharray: 10, 5;
+}
+
+.country {
+    fill: rgba(255, 166, 0, 0.694);
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
